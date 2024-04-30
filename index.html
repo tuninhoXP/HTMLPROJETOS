@@ -7,38 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div> 
-        <h1> CALCULADORA IMC </h1>
-    </div>
+    
+    <h1> ÁREA DO CÍRCULO </h1>
     <div> 
         <div>
-            <label>Peso: </label>
-            <input id = "inputPeso" />
-            <label>Altura: </label>
-            <input id = "inputAltura" /> 
-            <button class="btn" id = "btnCalcular" onclick=calcularIMC()>Calcular</button>
+            <label>Raio: </label>
+            <input id = "inputRaio" />  
+            <button class="btn" id = "btnCalcular" onclick=calcularAREA()>Calcular</button>
         </div>
-            <label  Resultado: ></label><label>
+            <label> Resultado : </label>
             <label id= "lblResultado" ></label>
             
         </div>    
+
+
 </body>
 <script> 
-    
-    
-    function calcularIMC(){
+
+    function calcularAREA(){
         
-        let peso = document.getElementById("inputPeso").value;
-        let altura = document.getElementById("inputAltura").value;
-        let resultado = peso / (altura * altura);
-        resultado
-        document.getElementById("lblResultado").innerText = resultado;
-        if (peso=="" || altura=="") {
+        let raio = document.getElementById("inputRaio").value;
+        let area = 3.14 * (raio * raio * raio * raio)
+        document.getElementById("lblResultado").innerText = area;
+        document.getElementById("lblResultado").classList.add("textoArea");
+        if (area=="") {
             document.getElementById("lblResultado").innerHTML = "Preencha todos os campos.";
-            document.getElementById("lblResultado").classList.add("textoresultado");
+            
         } else {
-            document.getElementById("lblResultado").innerText = resultado;
-            document.getElementById("lblResultado").classList.remove("textoresultado");
+            document.getElementById("lblResultado").innerText = area;
+           
         }
 
     };
