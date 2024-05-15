@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st1.css">
+</head>
+<body>
+<div class = "app">
+
+<div class = "titulo">
+<h1> FOLHA DE PAGAMENTO</h1>
+
+<div class = "programa">
+    <label class = "LblNome"> Nome </label>
+    <p></p>
+    <input class = "inputN" id = "ipn">
+    <p></p>
+    <label class = "LblSalario"> Salario </label>
+    <p></p>
+    <input class = "inputS" id = "ips">
+    <p></p>
+    <button class = "btnAdicionar" id = "btnCalcular" onclick=SomarPorra() > ADICIONAR </button>
+ 
+    </div>
+    <label id= "lblResultado" >  </label>
+    <label id="lbltotal"></label>
+    </div> 
+ 
+</div>
+
+  
+</div>    
+</body>
+<script>
+    var numerofuncionario = 1;
+    var totalfolha = 0;
+function SomarPorra() {
+
+    
+    const Nome = document.getElementById("ipn").value;
+    const Salario = document.getElementById("ips").value;
+    let resultado = Nome + "---" + Salario;
+    document.getElementById("lblResultado").innerHTML = resultado;
+ 
+    
+ 
+}
+
+
+
+
+</script>
+</html>
