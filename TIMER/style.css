@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     
+     font-family: 'Montserrat', sans-serif;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     
+     
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(185, 222, 255);
+    
+}
+
+.btn {
+    width:97px
+    
+    
+}
+.timer-display {
+    font-size: 169px;
+}
+
+.buttons {
+
+}
